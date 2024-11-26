@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docu</title>
+    <style>
+        /* Стили для кнопки при наведении */
+        .button:hover {
+            background-color: #0473ea;
+        }
+
+        /* Стили для кнопки при нажатии */
+        .click:active {
+            background-color: #df080f;
+            color: green;
+        }
+
+        /* Стили для поля ввода при фокусе */
+        .input:focus {
+            border-color: #f607de;
+            outline: none;
+        }
+
+        /* Стили для четных и нечетных элементов списка */
+        .my-list li:nth-child(odd) {
+            background-color: #e30808;
+        }
+
+        .my-list li:nth-child(even) {
+            background-color: #1321e7;
+        }
+
+        /* Стили для блоков .block1 */
+        .block1 {
+            border: 5px solid red;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        /* Стили для ссылок при наведении */
+        a:hover {
+            color: rgb(24, 227, 159);
+            text-decoration: underline;
+        }
+
+        /* Стили для нечетных абзацев в .block1 */
+        .block1 p:nth-child(odd) {
+            background-color: #4cd109;
+            font-weight: bold;
+        }
+
+        /* Стили для первого и последнего дочернего элемента .block1 */
+        .block1:first-child {
+            border-color: blue;
+            background-color: #e0e0ff;
+        }
+
+        .block1:last-child {
+            border-color: green;
+            background-color: #d0ffd0;
+        }
+
+        /* Стили для .kubik */
+        .kubik {
+            border: 5px solid red;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .kubik a:hover {
+            color: #f3026b;
+            text-decoration: underline;
+        }
+
+        /* Стили для нечетных абзацев в .kubik */
+        .kubik p:nth-child(odd) {
+            background-color: aqua;
+            font-weight: bold;
+        }
+
+        /* Стили для первого дочернего элемента .kubik */
+        .kubik:first-child {
+            border-color: #e30808;
+            background-color: antiquewhite;
+        }
+
+        /* Стили для последнего дочернего элемента .kubik */
+        .kubik:last-child {
+            border-color: #f607de;
+            background-color: #4cd109;
+        }
+    </style>
+</head>
+<body>
+    <!-- Кнопки и поле ввода -->
+    <button class="button">click</button>
+    <button class="click">кнопка</button>
+    <input class="input" type="text">
+
+    <!-- Список с четными и нечетными элементами -->
+    <ul class="my-list">
+        <li>Элемент 1</li>
+        <li>Элемент 2</li>
+        <li>Элемент 3</li>
+        <li>Элемент 4</li>
+        <li>Элемент 5</li>
+    </ul>
+
+    <!-- Первый блок с текстом, картинкой и ссылкой -->
+    <div class="block1">
+        <p>Четный текст в блоке</p>
+        <img src="kkkk.jpg" alt="картика20"/>
+        <a href="https://platform.mobydev.kz/my-courses/15/lessons/256">ссылка внутри блока</a>
+    </div>
+
+    <!-- Второй блок с текстом, картинкой и ссылкой -->
+    <div class="kubik">
+        <p>Нечетный текст в кубике</p>
+        <img src="imggg.jpg" alt="картинка2"/>
+        <a href="https://github.com/abylai991227/homework3-3/blob/main/index.html">ссылка внутри блока</a>
+    </div>
+</body>
+</html>
